@@ -1,8 +1,12 @@
 import datetime
-from Google import Create_Service
+import sys
+
 from googleapiclient.http import MediaFileUpload
 
-CLIENT_SECRET_FILE = 'client_secret.json'
+from Google import Create_Service
+from ismediafile import isMediaFile
+
+CLIENT_SECRET_FILE = 'client_secret (2).json'
 API_NAME = 'youtube'
 API_VERSION = 'v3'
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
@@ -26,16 +30,19 @@ request_body = {
     'notifySubscribers': False
 }
 
-mediaFile = MediaFileUpload('HelloWorld.MP4')
+if __name__ == '__main__':
+    for item in sys.argv[1:]:
+        mediaFile = MediaFileUpload(item)
+        if isMediaFile(item):
+            response_upload = service.videos().insert(
+                part='snippet,status',
+                body=request_body,
+                media_body=mediaFile
+            ).execute()
 
-response_upload = service.videos().insert(
-    part='snippet,status',
-    body=request_body,
-    media_body=mediaFile
-).execute()
-
-
-service.thumbnails().set(
-    videoId=response_upload.get('id'),
-    media_body=MediaFileUpload('thumbnail.png')
-).execute()
+            service.thumbnails().set(
+                videoId=response_upload.get('id'),
+                media_body=MediaFileUpload('thumbnail.png')
+            ).execute()
+        else:
+            print(f"This file is not a video: {item}")

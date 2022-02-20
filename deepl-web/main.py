@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 from pyppeteer import launch
 
+from Proxy import Proxy
 
 def performance(func):
     def wrapper(*args, **kwargs):
@@ -96,7 +97,7 @@ if __name__ == "__main__":
     # while True:
     #     begin_with_site = process(begin_with_site)
     proxy = Proxy()
-    print(proxy := proxy.get_proxy())
+    print(proxy := proxy.get_proxy("https://2ip.ru/"))
     res = requests.get(f"https://2ip.ru/",
                        proxies={'http': proxy})
     soup = BeautifulSoup(res.text, 'html.parser')

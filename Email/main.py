@@ -34,7 +34,7 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
     smtp.login(d['login'], d['password'])
-    for item in match:
+    for item in found_emails:
         try:
             email['to'] = item
             smtp.send_message(email)

@@ -66,10 +66,10 @@
 # fib = lambda n: n if n <= 1 else fib(n - 1) + fib(n - 2)
 #
 # print([fib(n) for n in range(1, 10)])
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-# firefox_options = webdriver.FirefoxOptions()
-# firefox_options.add_argument('--proxy-server=%s' % proxies)
-# driver = webdriver.Firefox(executable_path=r'C:\Users\inter\source\Python\Projects\deepl-web\geckodriver.exe')
-# resp = driver.get(url)
-# print(resp)
-# driver.close()
+driver = webdriver.Firefox()
+driver.get("https://www.google.com/search?q=selenium+webdriver+python&source=hp&ei=oqYYYvfLAfKQxc8PqouNmAo&iflsig=AHkkrS4AAAAAYhi0skbqhvyEuh7qvSveHq1n9MDBdl1U&oq=selenium+web&gs_lcp=Cgdnd3Mtd2l6EAMYAjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CwguEIAEEMcBEKMCOgsILhCABBDHARDRAzoICC4QgAQQ1AI6BQguEIAEUK0EWKwfYLczaAFwAHgAgAFyiAGSCZIBAzcuNZgBAKABAbABAA&sclient=gws-wiz")
+
+driver.close()

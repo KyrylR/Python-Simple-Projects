@@ -23,7 +23,7 @@ request_body = {
         'tags': ['Travel', 'video test', 'Travel Tips']
     },
     'status': {
-        'privacyStatus': 'private',
+        'privacyStatus': 'unlisted',
         # 'publishAt': upload_date_time,
         'selfDeclaredMadeForKids': False,
     },

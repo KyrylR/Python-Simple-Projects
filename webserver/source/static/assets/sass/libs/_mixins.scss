@@ -58,9 +58,9 @@
 
 }
 
-/// Encodes a SVG data URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
-/// @param {string} $svg SVG data URL.
-/// @return {string} Encoded SVG data URL.
+/// Encodes a SVG data_to_translate URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
+/// @param {string} $svg SVG data_to_translate URL.
+/// @return {string} Encoded SVG data_to_translate URL.
 @function svg-url($svg) {
 
 	$svg: str-replace($svg, '"', '\'');

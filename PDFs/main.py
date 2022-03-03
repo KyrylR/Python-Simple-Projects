@@ -10,7 +10,7 @@ def pdf_combiner(pdf_list):
     for pdf in pdf_list:
         print(pdf)
         merger.append(pdf)
-    merger.write('data/super.pdf')
+    merger.write('data_to_translate/super.pdf')
 
 
 def pdf_watermark():
@@ -29,13 +29,13 @@ def pdf_watermark():
 
 if __name__ == '__main__':
     # # Rotate pdf
-    # with open('data/dummy.pdf', 'rb') as file:
+    # with open('data_to_translate/dummy.pdf', 'rb') as file:
     #     reader = PyPDF2.PdfFileReader(file)
     #     page = reader.getPage(0)
     #     page.rotateCounterClockwise(90)
     #     writer = PyPDF2.PdfFileWriter()
     #     writer.addPage(page)
-    #     with open('data/tilt.pdf', 'wb') as wfile:
+    #     with open('data_to_translate/tilt.pdf', 'wb') as wfile:
     #         writer.write(wfile)
 
     pdf_watermark()

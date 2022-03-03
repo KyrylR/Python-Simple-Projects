@@ -13,7 +13,7 @@ class Proxy(object):
 
     def append_all_to_list(self):
         for proxy_data in self.proxy_data:
-            for proxy in proxy_data.json()['data']:
+            for proxy in proxy_data.json()['data_to_translate']:
                 if proxy['speed'] is None or proxy['speed'] > 2000:
                     continue
                 protocol_var = proxy['protocols'][0]
@@ -24,7 +24,7 @@ class Proxy(object):
     def get_proxy(self, url_local):
         proxies = {}
         for proxy_data in self.proxy_data:
-            for proxy in proxy_data.json()['data']:
+            for proxy in proxy_data.json()['data_to_translate']:
                 protocol_var = proxy['protocols'][0]
                 if proxy['speed'] is None or proxy['speed'] > 2000:
                     continue

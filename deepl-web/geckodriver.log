@@ -588,3 +588,35 @@ DevTools listening on ws://localhost:59754/devtools/browser/f3955d2a-f77e-466e-9
 1645005644173	Marionette	INFO	Stopped listening on port 59759
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1645782827561	geckodriver	INFO	Listening on 127.0.0.1:53075
+1645782830626	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53076" "-no-remote" "-profile" "C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofileNYwQcB"
+1645782831032	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofileNYwQcB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53076/devtools/browser/13ccdbe4-2198-40c1-a1c6-208943a13fa6
+1645782833228	Marionette	INFO	Listening on port 53081
+1645782833295	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645782851210	geckodriver	INFO	Listening on 127.0.0.1:53143
+1645782854293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53144" "-no-remote" "-profile" "C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofilee42pA6"
+1645782854649	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofilee42pA6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53144/devtools/browser/acb92ace-2fa1-47aa-bfb7-b4156c1ce091
+1645782856601	Marionette	INFO	Listening on port 53149
+1645782856963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645782866451	geckodriver	INFO	Listening on 127.0.0.1:53217
+1645782869531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53218" "-no-remote" "-profile" "C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofileXLTcY4"
+1645782869826	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\inter\\AppData\\Local\\Temp\\rust_mozprofileXLTcY4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53218/devtools/browser/7af97601-ed6c-4060-b5ff-85ad7c029be2
+1645782871812	Marionette	INFO	Listening on port 53223
+1645782872207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?hl=uk&passive=true&continue=https://www.google.com/search%3Fq%3Dselenium%2Bwebdriver%2Bpython%26source%3Dhp%26ei%3DoqYYYvfLAfKQxc8PqouNmAo%26iflsig%3DAHkkrS4AAAAAYhi0skbqhvyEuh7qvSveHq1n9MDBdl1U%26oq%3Dselenium%2Bweb%26gs_lcp%3DCgdnd3Mtd2l6EAMYAjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CwguEIAEEMcBEKMCOgsILhCABBDHARDRAzoICC4QgAQQ1AI6BQguEIAEUK0EWKwfYLczaAFwAHgAgAFyiAGSCZIBAzcuNZgBAKABAbABAA%26sclient%3Dgws-wiz&ec=GAZAAQ line 1 > eval line 304 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+1645782896302	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 8636, MediaDecoderStateMachine #1] WARNING: 20d9cdeb040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:375
+1645782914117	Marionette	INFO	Stopped listening on port 53223
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
